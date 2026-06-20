@@ -2,8 +2,8 @@ name: Post Gambar ke 2 Akun Threads
 
 on:
   schedule:
-    # Setiap 15 menit   (UTC)
-    - cron: '*/15 * * * *'
+    # Setiap 10 menit   (UTC)
+    - cron: '*/10 * * * *'
 
   # Tombol manual untuk testing
   workflow_dispatch:
