@@ -210,7 +210,7 @@ def post_to_threads() -> dict:
     Fungsi utama:
     1. Tentukan gambar selanjutnya (rotasi 1-5)
     2. Upload gambar dari template/ ke ImgBB
-    3. Bangun caption random
+    3. Bangun caption RANDOM TERPISAH untuk masing-masing akun
     4. Post ke Akun 1 dan Akun 2
     """
 
@@ -228,19 +228,22 @@ def post_to_threads() -> dict:
         print("[post] ❌ Gagal upload gambar ke ImgBB, batal posting.")
         return result
 
-    caption = build_caption()
-    print(f"[post] Caption terpilih: {caption}")
+    # Caption dibuat TERPISAH untuk masing-masing akun (independen, tidak sama)
+    caption_1 = build_caption()
+    caption_2 = build_caption()
+    print(f"[post] Caption Akun 1: {caption_1}")
+    print(f"[post] Caption Akun 2: {caption_2}")
 
     # ── Post ke Akun 1 ──────────────────────────────────────
     result["akun_1"] = post_to_account(
         THREADS_USER_ID_1, THREADS_ACCESS_TOKEN_1,
-        image_url, caption, "AKUN 1"
+        image_url, caption_1, "AKUN 1"
     )
 
     # ── Post ke Akun 2 ──────────────────────────────────────
     result["akun_2"] = post_to_account(
         THREADS_USER_ID_2, THREADS_ACCESS_TOKEN_2,
-        image_url, caption, "AKUN 2"
+        image_url, caption_2, "AKUN 2"
     )
 
     return result
