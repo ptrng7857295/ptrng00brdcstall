@@ -111,11 +111,12 @@ def get_next_image_index() -> int:
 
 
 def build_caption() -> str:
-    """Gabungkan 1 caption random + 1 ajakan join grup random + 1 hashtag random"""
+    """Gabungkan timestamp + 1 caption random + 1 ajakan join grup random + 1 hashtag random"""
+    waktu   = datetime.now(WIB).strftime("%d-%m-%Y %H:%M WIB")
     caption = random.choice(CAPTION_LIST)
     promosi = random.choice(PROMOSI_LIST)
     hashtag = random.choice(HASHTAG_LIST)
-    return f"{caption}\n\n{promosi}\n\n{hashtag}"
+    return f"🕐 {waktu}\n\n{caption}\n\n{promosi}\n\n{hashtag}"
 
 
 def upload_to_imgbb(image_path: str) -> str | None:
@@ -251,6 +252,10 @@ def post_to_threads() -> dict:
 
 # ─── MAIN ─────────────────────────────────────────────────────
 if __name__ == "__main__":
+    sleep_sec = random.randint(65, 200)
+    print(f"[main] Menunggu {sleep_sec} detik sebelum posting (biar natural)...")
+    time.sleep(sleep_sec)
+
     waktu = datetime.now(WIB).strftime("%d %b %Y %H:%M WIB")
     print(f"\n{'='*50}")
     print(f"  POST GAMBAR STATIS — {waktu}")
