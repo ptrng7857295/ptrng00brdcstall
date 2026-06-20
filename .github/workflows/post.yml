@@ -2,7 +2,7 @@ name: Post Gambar ke 2 Akun Threads
 
 on:
   schedule:
-    # Setiap 3 jam: 00:00, 03:00, 06:00, 09:00, 12:00, 15:00, 18:00, 21:00 (UTC)
+    # Setiap 15 menit   (UTC)
     - cron: '*/15 * * * *'
 
   # Tombol manual untuk testing
