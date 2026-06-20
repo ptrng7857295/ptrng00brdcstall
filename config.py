@@ -15,6 +15,10 @@ THREADS_ACCESS_TOKEN_2 = os.getenv("THREADS_ACCESS_TOKEN_2", "")
 IMGBB_API_KEY = os.getenv("IMGBB_API_KEY", "")
 
 # ─── PATH GAMBAR ───────────────────────────────────────────
-TEMPLATE_FOLDER = "template"
-IMAGE_FILENAME  = "post_image.png"   # nama file gambar yang kamu upload manual
-IMAGE_PATH      = f"{TEMPLATE_FOLDER}/{IMAGE_FILENAME}"
+TEMPLATE_FOLDER  = "template"
+TOTAL_GAMBAR     = 5
+COUNTER_FILE     = "counter.txt"   # simpan indeks gambar terakhir yang dipakai
+
+def get_image_path(index: int) -> str:
+    """Path gambar berdasarkan index (1-5)"""
+    return f"{TEMPLATE_FOLDER}/post_{index}.png"

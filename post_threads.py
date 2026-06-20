@@ -8,7 +8,7 @@ from datetime import datetime, timezone, timedelta
 from config import (
     THREADS_USER_ID_1, THREADS_ACCESS_TOKEN_1,
     THREADS_USER_ID_2, THREADS_ACCESS_TOKEN_2,
-    IMGBB_API_KEY, IMAGE_PATH
+    IMGBB_API_KEY, TOTAL_GAMBAR, COUNTER_FILE, get_image_path
 )
 
 BASE_URL = "https://graph.threads.net/v1.0"
@@ -28,6 +28,27 @@ CAPTION_LIST = [
     "Selalu ada yang baru, stay tuned ya 👍",
     "Cek selengkapnya dan kasih tanggapan kamu 💬",
 ]
+
+
+def get_next_image_index() -> int:
+    """
+    Baca counter.txt untuk tahu gambar mana yang sudah dipakai terakhir,
+    lalu kembalikan index gambar SELANJUTNYA (rotasi 1→2→3→4→5→1...).
+    """
+    try:
+        with open(COUNTER_FILE, "r") as f:
+            last_index = int(f.read().strip())
+    except (FileNotFoundError, ValueError):
+        last_index = 0  # belum pernah jalan, mulai dari awal
+
+    next_index = (last_index % TOTAL_GAMBAR) + 1
+
+    # Simpan index yang dipakai sekarang, untuk run berikutnya
+    with open(COUNTER_FILE, "w") as f:
+        f.write(str(next_index))
+
+    print(f"[rotasi] Gambar terpilih: post_{next_index}.png")
+    return next_index
 
 
 def build_caption() -> str:
@@ -125,18 +146,22 @@ def post_to_account(user_id: str, access_token: str, image_url: str, caption: st
 def post_to_threads() -> dict:
     """
     Fungsi utama:
-    1. Upload gambar dari template/ ke ImgBB
-    2. Bangun caption random
-    3. Post ke Akun 1 dan Akun 2
+    1. Tentukan gambar selanjutnya (rotasi 1-5)
+    2. Upload gambar dari template/ ke ImgBB
+    3. Bangun caption random
+    4. Post ke Akun 1 dan Akun 2
     """
 
     result = {"akun_1": False, "akun_2": False}
 
-    if not os.path.exists(IMAGE_PATH):
-        print(f"[post] ❌ Gambar tidak ditemukan: {IMAGE_PATH}")
+    index = get_next_image_index()
+    image_path = get_image_path(index)
+
+    if not os.path.exists(image_path):
+        print(f"[post] ❌ Gambar tidak ditemukan: {image_path}")
         return result
 
-    image_url = upload_to_imgbb(IMAGE_PATH)
+    image_url = upload_to_imgbb(image_path)
     if not image_url:
         print("[post] ❌ Gagal upload gambar ke ImgBB, batal posting.")
         return result
