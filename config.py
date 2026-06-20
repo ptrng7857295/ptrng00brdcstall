@@ -16,7 +16,7 @@ IMGBB_API_KEY = os.getenv("IMGBB_API_KEY", "")
 
 # ─── PATH GAMBAR ───────────────────────────────────────────
 TEMPLATE_FOLDER  = "template"
-TOTAL_GAMBAR     = 5
+TOTAL_GAMBAR     = 9
 COUNTER_FILE     = "counter.txt"   # simpan indeks gambar terakhir yang dipakai
 
 def get_image_path(index: int) -> str:
