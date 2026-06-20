@@ -29,6 +29,32 @@ CAPTION_LIST = [
     "Cek selengkapnya dan kasih tanggapan kamu 💬",
 ]
 
+# ─── DAFTAR AJAKAN JOIN GRUP (RANDOM) ───────────────────────
+PROMOSI_LIST = [
+    "Mau update tiap saat? Yuk gabung grup kami, link ada di bio 👆",
+    "Info lebih lengkap ada di grup kami, cek link di bio 📲",
+    "Dapatkan notifikasi langsung di grup, link bergabung ada di bio",
+    "Yuk gabung komunitas kami, link ada di bio 🔗",
+    "Diskusi & update setiap saat, gabung sekarang via link di bio",
+    "Komunitas kami sudah aktif, join sekarang! Link ada di bio 👆",
+    "Jangan ketinggalan update, gabung grup kami lewat link di bio 📊",
+    "Ribuan member sudah gabung, giliranmu! Link di bio 🔗",
+    "Grup khusus untuk kamu, join via link yang ada di bio ya",
+    "Update realtime langsung di grup kami, link bergabung di bio 💰",
+]
+
+# ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
+HASHTAG_LIST = [
+    "#hargaemas",
+    "#Antamlogammulia",
+    "#antam",
+    "#hargaantam",
+    "#hargaemashariini",
+    "#investasiemas",
+    "#beliemas",
+    "#brankasemas",
+]
+
 
 def get_next_image_index() -> int:
     """
@@ -52,8 +78,11 @@ def get_next_image_index() -> int:
 
 
 def build_caption() -> str:
-    """Pilih 1 caption secara random dari daftar"""
-    return random.choice(CAPTION_LIST)
+    """Gabungkan 1 caption random + 1 ajakan join grup random + 1 hashtag random"""
+    caption = random.choice(CAPTION_LIST)
+    promosi = random.choice(PROMOSI_LIST)
+    hashtag = random.choice(HASHTAG_LIST)
+    return f"{caption}\n\n{promosi}\n\n{hashtag}"
 
 
 def upload_to_imgbb(image_path: str) -> str | None:
