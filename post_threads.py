@@ -28,15 +28,13 @@ CAPTION_LIST = [
 
 # ─── DAFTAR AJAKAN JOIN GRUP (RANDOM) ───────────────────────
 PROMOSI_LIST = [
-    "Mau update tiap saat? Yuk gabung grup kami, link ada di bio 👆",
-    "Info lebih lengkap ada di grup kami, cek link di bio 📲",
-    "Dapatkan notifikasi langsung di grup, link bergabung ada di bio",
-    "Yuk gabung komunitas kami, link ada di bio 🔗",
-    "Diskusi & update setiap saat, gabung sekarang via link di bio",
-    "Komunitas kami sudah aktif, join sekarang! Link ada di bio 👆",
-    "Jangan ketinggalan update, gabung grup kami lewat link di bio 📊",
-    "Ratusan member sudah gabung, giliranmu! Link di bio 🔗",
-    "Grup khusus untuk kamu, join via link yang ada di bio ya",
+    "Mau update harga emas tiap saat? Yuk gabung grup kami, link ada di bio 👆",
+    "Info lebih lengkap harga dasar emas, cek link di bio 📲",
+    "Dapatkan notifikasi harga emas via WA, link bergabung ada di bio",
+    "Update harga emas. Yuk gabung komunitas kami, link ada di bio 🔗",
+    "Jangan ketinggalan update harga emas terkini, gabung grup kami lewat link di bio 📊",
+    "Ratusan member sudah gabung, join channel update harga emas. Link di bio 🔗",
+    "Grup khusus update harga emas, join via link yang ada di bio ya",
     "Update realtime langsung di grup kami, link bergabung di bio 💰",
 ]
 
