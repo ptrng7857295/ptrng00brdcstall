@@ -93,12 +93,14 @@ def get_next_image_index() -> int:
 
 
 def build_caption() -> str:
-    """Gabungkan timestamp + 1 caption random + 1 ajakan join grup random + 1 hashtag random"""
+    """Gabungkan caption random + ajakan join grup random + hashtag random + timestamp"""
     waktu   = datetime.now(WIB).strftime("%d-%m-%Y %H:%M WIB")
     caption = random.choice(CAPTION_LIST)
     promosi = random.choice(PROMOSI_LIST)
     hashtag = random.choice(HASHTAG_LIST)
-    return f"🕐 {waktu}\n\n{caption}\n\n{promosi}\n\n{hashtag}"
+
+    return f"{caption}\n\n{promosi}\n\n{hashtag}\n\n🕐 {waktu}"
+    
 
 
 def upload_to_imgbb(image_path: str) -> str | None:
