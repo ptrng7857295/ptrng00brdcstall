@@ -17,25 +17,23 @@ WIB = timezone(timedelta(hours=7))
 
 # ─── DAFTAR CAPTION RANDOM ───────────────────────────────────
 CAPTION_LIST = [
-    "Update terbaru hari ini! Jangan sampai ketinggalan 🔔",
-    "Cek info lengkapnya di sini ya 👀",
-    "Sudah update? Yuk simak yang terbaru 📌",
-    "Info update harga dasar emas buat kamu 📋",
-    "Jangan lupa share info harga dasar emas ini 🔁",
-    "Pantau terus update dari kami setiap saat 📊",
-    "Ini adalah update harga dasar emas masing masing brand 📍",
+    "BrankasEmas(dot)com kamu bisa tracking nilai aset kamu, sesuai harga terkini harga dasar emas",
+    "Gabung dengan BrankasEmas(dot)com , kamu bisa melihat riwayat harga emas dari berbagai brand",
+    "BrankasEmas(dot)com membantu kamu tracking nilai aset emas secara real-time berdasarkan harga dasar emas terkini dari berbagai brand",
+    "Pantau pergerakan harga dasar emas dari berbagai brand favoritmu di BrankasEmas(dot)com dengan data yang selalu diperbarui.",
+    "Simpan, pantau, dan kelola aset emasmu lebih mudah melalui BrankasEmas(dot)com, lengkap dengan riwayat harga emas",
+    "Ingin tahu nilai aset emasmu hari ini? BrankasEmas(dot)com menyediakan fitur tracking aset dan harga emas terbaru.",
+    "Di BrankasEmas(dot)com, kamu bisa memantau harga emas berbagai brand sekaligus membeli emas dengan lebih praktis",
+    "BrankasEmas(dot)com adalah solusi untuk tracking aset emas, melihat riwayat harga, memantau harga dasar emas berbagai brand, dan membeli emas dalam satu platform",
 ]
 
 # ─── DAFTAR AJAKAN JOIN GRUP (RANDOM) ───────────────────────
 PROMOSI_LIST = [
-    "Mau update harga emas tiap saat? Yuk gabung grup kami, link ada di bio 👆",
-    "Info lebih lengkap harga dasar emas, cek link di bio 📲",
-    "Dapatkan notifikasi harga emas via WA, link bergabung ada di bio",
+    "Gabung juga dengan grup kami, link di bio",
+    "Pantu juga harga emas melalui grup whatsapp, join link ada di bio",
+    "Jangan lewatkan update harga emas, link di bio 📊", 
     "Update harga emas. Yuk gabung komunitas kami, link ada di bio 🔗",
-    "Jangan ketinggalan update harga emas terkini, gabung grup kami lewat link di bio 📊",
-    "Ratusan member sudah gabung, join channel update harga emas. Link di bio 🔗",
-    "Grup khusus update harga emas, join via link yang ada di bio ya",
-    "Update realtime langsung di grup kami, link bergabung di bio 💰",
+    "Grup WA pantau harga emas, join via link yang ada di bio ya",
 ]
 
 # ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
