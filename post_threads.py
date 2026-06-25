@@ -17,14 +17,10 @@ WIB = timezone(timedelta(hours=7))
 
 # ─── DAFTAR CAPTION RANDOM ───────────────────────────────────
 CAPTION_LIST = [
-    "BrankasEmas(dot)com kamu bisa tracking nilai aset kamu, sesuai harga terkini harga dasar emas",
-    "Gabung dengan BrankasEmas(dot)com , kamu bisa melihat riwayat harga emas dari berbagai brand",
-    "BrankasEmas(dot)com membantu kamu tracking nilai aset emas secara real-time berdasarkan harga dasar emas terkini dari berbagai brand",
-    "Pantau pergerakan harga dasar emas dari berbagai brand favoritmu di BrankasEmas(dot)com dengan data yang selalu diperbarui.",
-    "Simpan, pantau, dan kelola aset emasmu lebih mudah melalui BrankasEmas(dot)com, lengkap dengan riwayat harga emas",
-    "Ingin tahu nilai aset emasmu hari ini? BrankasEmas(dot)com menyediakan fitur tracking aset dan harga emas terbaru.",
-    "Di BrankasEmas(dot)com, kamu bisa memantau harga emas berbagai brand sekaligus membeli emas dengan lebih praktis",
-    "BrankasEmas(dot)com adalah solusi untuk tracking aset emas, melihat riwayat harga, memantau harga dasar emas berbagai brand, dan membeli emas dalam satu platform",
+    "BrankasEmas(dot)com | Semua Tentang Emas dalam Satu Dashboard. Update spot emas global realtime, hitung nilai aset emas otomatis",
+    "BrankasEmas(dot)com | Kamu bisa melihat riwayat harga emas dari berbagai brand",
+    "BrankasEmas(dot)com | Membantu kamu tracking nilai aset emas secara real-time berdasarkan harga dasar emas terkini dari berbagai brand",
+    "BrankasEmas(dot)com | Lacak harga, pantau aset, dan temukan penawaran emas terbaik setiap hari dalam satu platform",
 ]
 
 # ─── DAFTAR AJAKAN JOIN GRUP (RANDOM) ───────────────────────
