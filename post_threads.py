@@ -33,9 +33,6 @@ PROMOSI_LIST = [
 
 # ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
 HASHTAG_LIST = [
-    "#finansial",
-    "#accounting",
-    "#IHSG",
     "#JualLMAntam",
     "#emas hari ini",
     "#antam",
@@ -48,14 +45,9 @@ HASHTAG_LIST = [
     "#investing",
     "#jakarta",
     "#emasdigital",
-    "#semarnusantara",
     "#terimajualbelimas",
-    "#UMKMthreads",
-    "#Worklife",
-    "#viralThreads",
     "#Ekonomi",
     "#Butikantambekasi",
-    "#nabung",
     "#jakartatoday",
     "#emasperhiasan",
     "#galeri24",
