@@ -28,8 +28,7 @@ PROMOSI_LIST = [
     "Gabung juga dengan grup kami, link di bio",
     "Pantu juga harga emas melalui grup whatsapp, join link ada di bio",
     "Jangan lewatkan update harga emas, link di bio 📊", 
-    "Update harga emas. Yuk gabung komunitas kami, link ada di bio 🔗",
-    "Grup WA pantau harga emas, join via link yang ada di bio ya",
+
 ]
 
 # ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
