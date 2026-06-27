@@ -17,9 +17,10 @@ WIB = timezone(timedelta(hours=7))
 
 # ─── DAFTAR CAPTION RANDOM ───────────────────────────────────
 CAPTION_LIST = [
-    "BrankasEmas(dot)com | Semua Tentang Emas dalam Satu Dashboard. Update spot emas global realtime, hitung nilai aset emas otomatis",
+    "BrankasEmas(dot)com | Semua tentang emas di satu dashboard. Update spot emas global realtime, hitung nilai aset emas otomatis",
+    "BrankasEmas(dot)com | Tersedia fitur update spot emas global realtime",
     "BrankasEmas(dot)com | Kamu bisa melihat riwayat harga emas dari berbagai brand",
-    "BrankasEmas(dot)com | Membantu kamu tracking nilai aset emas secara real-time berdasarkan harga dasar emas terkini dari berbagai brand",
+    "BrankasEmas(dot)com | Membantu kamu tracking nilai aset emas berdasarkan harga dasar emas terkini dari berbagai brand",
     "BrankasEmas(dot)com | Lacak harga, pantau aset, dan temukan penawaran emas terbaik setiap hari dalam satu platform",
 ]
 
