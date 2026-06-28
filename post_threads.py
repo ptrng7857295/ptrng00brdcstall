@@ -52,14 +52,12 @@ HASHTAG_LIST = [
     "#juallogammulia",
     "#logammuliaantam",
     "#emasantam",
-    "#GoldThreads",
     "#pegadaian",
     "#tangsel",
     "#Nyabarantam",
     "#LogamMulia",
     "#jewelrythreads",
     "#investing",
-    "#jakarta",
 ]
 
 
