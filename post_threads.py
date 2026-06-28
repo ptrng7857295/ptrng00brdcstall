@@ -34,30 +34,7 @@ PROMOSI_LIST = [
 
 # ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
 HASHTAG_LIST = [
-    "#Antamlogammulia",
-    "#grupwajualbeliantam",
-    "#emas",
-    "#Jualemas",
-    "#emasantamlogammulia",
-    "#GoldEmasLM",
-    "#IHSG",
-    "#JualLMAntam",
-    "#emas hari ini",
-    "#antam",
-    "#buybackemas",
-    "#investasiemas",
-    "#beliemas",
-    "#brankasemas",
-    "#HargaEmasHariIni",
-    "#juallogammulia",
-    "#logammuliaantam",
-    "#emasantam",
-    "#pegadaian",
-    "#tangsel",
-    "#Nyabarantam",
-    "#LogamMulia",
-    "#jewelrythreads",
-    "#investing",
+    "Antamlogammulia",
 ]
 
 
