@@ -14,22 +14,25 @@ from config import (
 BASE_URL = "https://graph.threads.net/v1.0"
 WIB = timezone(timedelta(hours=7))
 
-
 # ─── DAFTAR CAPTION RANDOM ───────────────────────────────────
 CAPTION_LIST = [
-    "BrankasEmas(dot)com | Semua tentang emas di satu dashboard. Update spot emas global realtime, hitung nilai aset emas otomatis",
-    "BrankasEmas(dot)com | Tersedia fitur update spot emas global realtime",
-    "BrankasEmas(dot)com | Kamu bisa melihat riwayat harga emas dari berbagai brand",
-    "BrankasEmas(dot)com | Membantu kamu tracking nilai aset emas berdasarkan harga dasar emas terkini dari berbagai brand",
-    "BrankasEmas(dot)com | Lacak harga, pantau aset, dan temukan penawaran emas terbaik setiap hari dalam satu platform",
+    "Capek buka WhatsApp atau Telegram terus cuma buat cek update harga emas? 😄\n\nTenang, BrankasEmas akan hadir dengan notifikasi harga emas otomatis setiap 4 jam sekali.\n\nJadi kamu tetap update tanpa harus cek manual.\n\n🚀 Segera kami rilis!",
+
+    "Kini memantau harga emas akan jadi lebih praktis.\n\n📲 BrankasEmas akan mengirimkan notifikasi update harga emas setiap 4 jam langsung ke aplikasi.\n\nTidak perlu lagi buka grup WhatsApp atau Telegram berkali-kali.\n\n✨ Tunggu peluncurannya ya!",
+
+    "Masih sering buka WhatsApp atau Telegram buat lihat harga emas terbaru? 🤔\n\nSebentar lagi cukup buka BrankasEmas.\n\n🔔 Notifikasi update harga emas setiap 4 jam.\n📈 Lebih cepat, lebih praktis, dan selalu up to date.\n\n🚀 Coming Soon!",
+
+    "Update harga emas kini lebih mudah.\n\nDengan aplikasi BrankasEmas, kamu akan mendapatkan notifikasi harga emas setiap 4 jam secara otomatis.\n\nTidak perlu lagi repot mencari update di berbagai grup chat.\n\n📲 BrankasEmas segera hadir. Nantikan ya! 😊",
 ]
+
+
 
 # ─── DAFTAR AJAKAN JOIN GRUP (RANDOM) ───────────────────────
 PROMOSI_LIST = [
-    "Gabung juga dengan grup kami, link di bio",
-    "Pantu juga harga emas melalui grup whatsapp, join link ada di bio",
-    "Jangan lewatkan update harga emas, link di bio 📊", 
-
+    "📲 Gabung juga ke grup WhatsApp kami. Link ada di bio!",
+    "💬 Pantau update harga emas setiap hari lewat grup WhatsApp. Join sekarang, link di bio.",
+    "📊 Jangan sampai ketinggalan update harga emas terbaru. Klik link di bio untuk bergabung!",
+    "🚀 Dapatkan informasi harga emas lebih cepat bersama komunitas BrankasEmas. Link grup ada di bio.",
 ]
 
 # ─── DAFTAR HASHTAG (RANDOM) ─────────────────────────────────
@@ -66,7 +69,7 @@ def build_caption() -> str:
     promosi = random.choice(PROMOSI_LIST)
     hashtag = random.choice(HASHTAG_LIST)
 
-    return f"{caption}\n\n{promosi}\n\n{hashtag}\n\n🕐 {waktu}"
+    return f"{caption}\n\n🕐 {waktu}"
     
 
 
