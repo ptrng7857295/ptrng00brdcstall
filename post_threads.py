@@ -16,13 +16,14 @@ WIB = timezone(timedelta(hours=7))
 
 # ─── DAFTAR CAPTION RANDOM ───────────────────────────────────
 CAPTION_LIST = [
-    "Capek buka WhatsApp atau Telegram terus cuma buat cek update harga emas? 😄\n\nTenang, BrankasEmas akan hadir dengan notifikasi harga emas otomatis setiap 4 jam sekali.\n\nJadi kamu tetap update tanpa harus cek manual.\n\n🚀 Segera kami rilis!",
+    "Awalnya saya bikin ini cuma buat kebutuhan sendiri.\n Soalnya hampir setiap hari harus cari update harga emas di beberapa tempat.\n Lama-lama kepikiran, mungkin orang lain juga mengalami hal yang sama",
+    "Beberapa bulan terakhir saya lagi iseng bikin alat buat pantau harga emas. \n Awalnya cuma proyek kecil. Sekarang malah jadi kepikiran, semoga nanti bisa bermanfaat buat banyak orang.",
+    "Saya penasaran... \n Kalau ada satu tempat yang bisa kasih update harga emas otomatis, tanpa harus buka banyak grup \n kira-kira bakal kepakai nggak?",
+    "Kadang ide itu muncul dari masalah yang kita alami sendiri. \n Saya capek harus cek harga emas ke banyak sumber setiap hari. Akhirnya saya coba bikin solusi yang lebih sederhana.",
+    "Masih terus saya kembangkan pelan-pelan. \n Targetnya sederhana: bikin cek harga emas jadi lebih cepat, lebih praktis, dan nggak bikin repot. \n Menurut kalian, fitur apa yang paling penting kalau punya aplikasi seperti ini?",
+    "Saya suka hal-hal yang bisa bikin hidup lebih sederhana. \n Kalau ada cara yang lebih praktis buat pantau harga emas, kenapa harus yang ribet?",
+    "Awalnya cuma iseng bikin buat dipakai sendiri. \n Sekarang malah jadi semangat buat terus dikembangkan.",
 
-    "Kini memantau harga emas akan jadi lebih praktis.\n\n📲 BrankasEmas akan mengirimkan notifikasi update harga emas setiap 4 jam langsung ke aplikasi.\n\nTidak perlu lagi buka grup WhatsApp atau Telegram berkali-kali.\n\n✨ Tunggu peluncurannya ya!",
-
-    "Masih sering buka WhatsApp atau Telegram buat lihat harga emas terbaru? 🤔\n\nSebentar lagi cukup buka BrankasEmas.\n\n🔔 Notifikasi update harga emas setiap 4 jam.\n📈 Lebih cepat, lebih praktis, dan selalu up to date.\n\n🚀 Coming Soon!",
-
-    "Update harga emas kini lebih mudah.\n\nDengan aplikasi BrankasEmas, kamu akan mendapatkan notifikasi harga emas setiap 4 jam secara otomatis.\n\nTidak perlu lagi repot mencari update di berbagai grup chat.\n\n📲 BrankasEmas segera hadir. Nantikan ya! 😊",
 ]
 
 
@@ -69,7 +70,7 @@ def build_caption() -> str:
     promosi = random.choice(PROMOSI_LIST)
     hashtag = random.choice(HASHTAG_LIST)
 
-    return f"{caption}\n\n🕐 {waktu}"
+    return f"{caption}\n}"
     
 
 
