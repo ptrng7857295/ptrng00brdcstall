@@ -70,7 +70,7 @@ def build_caption() -> str:
     promosi = random.choice(PROMOSI_LIST)
     hashtag = random.choice(HASHTAG_LIST)
 
-    return f"{caption}\n}"
+    return f"{caption}\n \n🕐 {waktu} }"
     
 
 
